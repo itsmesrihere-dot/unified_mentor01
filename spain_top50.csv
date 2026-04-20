@@ -9,8 +9,8 @@ st.subheader("📊 Dataset Preview")
 st.dataframe(df.head())
 
 st.subheader("🔥 Top 10 Songs")
-top10 = df[df['position'] <= 10]
-st.bar_chart(top10['position'].value_counts())
+top10 = df[df['Position'] <= 10]
+st.bar_chart(top10['Position'].value_counts())
 
 st.subheader("📈 Basic Statistics")
 st.write(df.describe())
